@@ -18,6 +18,9 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Styles\main.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\Controls\SampleUserControl.xaml">
       <SubType>Designer</SubType>
     </Page>

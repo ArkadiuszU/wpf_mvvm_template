@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\arkurb\source\repos\WPF_MVVM_Template\obj\Debug\net5.0-windows\
+C:\Users\arkurb\source\repos\wpf_mvvm_template\obj\Debug\net5.0-windows\
 WPF_MVVM_Template
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-C:\Users\arkurb\source\repos\WPF_MVVM_Template\App.xaml
-3643621587
+C:\Users\arkurb\source\repos\wpf_mvvm_template\App.xaml
+4-1130329459
 
 10374556656
 193582816078
-MainWindow.xaml;Views\Controls\SampleUserControl.xaml;Views\Pages\HomePage.xaml;
+MainWindow.xaml;Styles\main.xaml;Views\Controls\SampleUserControl.xaml;Views\Pages\HomePage.xaml;
 
 False
 

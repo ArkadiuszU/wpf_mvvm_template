@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Users\arkurb\source\repos\wpf_mvvm_template\App.xaml
-3643621587
+4-1130329459
 
 121687307652
 193582816078
-MainWindow.xaml;Views\Controls\SampleUserControl.xaml;Views\Pages\HomePage.xaml;
+MainWindow.xaml;Styles\main.xaml;Views\Controls\SampleUserControl.xaml;Views\Pages\HomePage.xaml;
 
 False
 

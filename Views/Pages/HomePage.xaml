@@ -13,11 +13,11 @@
         <viewmodels:SampleViewModel/>
     </Page.DataContext>
     <StackPanel Background="#41b3a3">
-        <StackPanel Background="#e27d60" Margin="10">
+        <StackPanel Style="{StaticResource container}">
             <TextBlock Margin="5" Text ="{Binding ProgressValue}"/>
             <Slider  Maximum="100" Value ="{Binding ProgressValue, Mode=TwoWay}" />
         </StackPanel>
-        <StackPanel   Background="#e27d60" Margin="10">
+        <StackPanel  Style="{StaticResource container}">
             <TextBlock Margin="5" Text ="{Binding InputText}"/>
             <TextBox   Text ="{Binding InputText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
@@ -27,14 +27,14 @@
             </StackPanel>
         </StackPanel>
 
-        
-            <StackPanel  Background="#e8a87c" Margin="10">
+
+        <StackPanel Style="{StaticResource container}">
                 <TextBlock Text="Lista"/>
             <ScrollViewer Height="180">
                 <ItemsControl ItemsSource="{Binding ItemsList}" Margin="20">
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
-                            <controls:SampleUserControl Background="#c38d9e"  Height="50" Margin="5" />
+                            <controls:SampleUserControl />
                         </DataTemplate>
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>

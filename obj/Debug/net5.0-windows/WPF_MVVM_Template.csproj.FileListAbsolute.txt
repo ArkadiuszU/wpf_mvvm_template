@@ -25,3 +25,5 @@ C:\Users\arkurb\source\repos\WPF_MVVM_Template\obj\Debug\net5.0-windows\WPF_MVVM
 C:\Users\arkurb\source\repos\WPF_MVVM_Template\obj\Debug\net5.0-windows\WPF_MVVM_Template.genruntimeconfig.cache
 C:\Users\arkurb\source\repos\WPF_MVVM_Template\obj\Debug\net5.0-windows\Views\Controls\SampleUserControl.g.cs
 C:\Users\arkurb\source\repos\WPF_MVVM_Template\obj\Debug\net5.0-windows\Views\Controls\SampleUserControl.baml
+C:\Users\arkurb\source\repos\wpf_mvvm_template\obj\Debug\net5.0-windows\Styles\main.baml
+C:\Users\arkurb\source\repos\wpf_mvvm_template\obj\Debug\net5.0-windows\App.baml
