@@ -21,9 +21,9 @@
             <TextBlock Margin="5" Text ="{Binding InputText}"/>
             <TextBox   Text ="{Binding InputText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button  Command="{Binding Reset}" Width="70" Margin="20">Reset</Button>
-                <Button  Command="{Binding ChangeProgress}" CommandParameter="10" Width="70" Margin="20">Min</Button>
-                <Button  Command="{Binding ChangeProgress}" CommandParameter="100" Width="70" Margin="20">Max</Button>
+                <Button  Command="{Binding Reset}" Style="{StaticResource button}">Reset</Button>
+                <Button  Command="{Binding ChangeProgress}" CommandParameter="10"  Style="{StaticResource button}"> Min</Button>
+                <Button  Command="{Binding ChangeProgress}" CommandParameter="100"  Style="{StaticResource button}" >Max</Button>
             </StackPanel>
         </StackPanel>
 

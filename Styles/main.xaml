@@ -13,4 +13,9 @@
         <Setter Property="Background" Value="#c38d9e"/>
     </Style>
 
+    <Style TargetType="{x:Type Button}" x:Key="button">
+        <Setter Property="Margin" Value="20"/>
+        <Setter Property="Width" Value="70"/>
+    </Style>
+
 </ResourceDictionary>
