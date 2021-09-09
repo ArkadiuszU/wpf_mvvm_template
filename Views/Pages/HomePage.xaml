@@ -1,0 +1,46 @@
+﻿<Page x:Class="WPF_MVVM_Template.Views.Pages.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPF_MVVM_Template.Views.Pages"
+      xmlns:controls="clr-namespace:WPF_MVVM_Template.Views.Controls"
+      xmlns:viewmodels="clr-namespace:WPF_MVVM_Template.ViewModels"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="HomePage">
+    <Page.DataContext>
+        <viewmodels:SampleViewModel/>
+    </Page.DataContext>
+    <StackPanel Background="#41b3a3">
+        <StackPanel Background="#e27d60" Margin="10">
+            <TextBlock Margin="5" Text ="{Binding ProgressValue}"/>
+            <Slider  Maximum="100" Value ="{Binding ProgressValue, Mode=TwoWay}" />
+        </StackPanel>
+        <StackPanel   Background="#e27d60" Margin="10">
+            <TextBlock Margin="5" Text ="{Binding InputText}"/>
+            <TextBox   Text ="{Binding InputText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button  Command="{Binding Reset}" Width="70" Margin="20">Reset</Button>
+                <Button  Command="{Binding ChangeProgress}" CommandParameter="10" Width="70" Margin="20">Min</Button>
+                <Button  Command="{Binding ChangeProgress}" CommandParameter="100" Width="70" Margin="20">Max</Button>
+            </StackPanel>
+        </StackPanel>
+
+        
+            <StackPanel  Background="#e8a87c" Margin="10">
+                <TextBlock Text="Lista"/>
+            <ScrollViewer Height="180">
+                <ItemsControl ItemsSource="{Binding ItemsList}" Margin="20">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <controls:SampleUserControl Background="#c38d9e"  Height="50" Margin="5" />
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+        </StackPanel>
+        
+        
+    </StackPanel>
+</Page>
